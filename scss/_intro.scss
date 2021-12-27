@@ -1,0 +1,129 @@
+.intro{
+    position: relative;
+}
+.intro__presentation{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 250px;
+    position: relative;
+  z-index: 2;
+}
+.intro__presentation_content{
+    max-width: 540px;
+    h1{
+    font-size: 50px;
+    font-weight: medium;
+    color: #091133;
+}
+    p{
+ color: #505F98;
+ font-style: 18px;
+ line-height: 22px;
+ margin-top: 20px;
+ margin-bottom: 70px;
+}
+    .button:not(:last-child){
+    margin-right: 30px;
+    
+}
+    .white{
+    background: white;
+    color: #091133;
+    border: 1px solid #091133;
+}
+}
+.body__visual_rel{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    .body__visual{
+    position: relative;
+    z-index: 1;
+   
+    .body__visual_img:first-child{
+        position: absolute;
+        top: -423px;
+        right: 0px;
+    }
+    .body__visual_img:last-child{
+      position: absolute;
+      top: -195px;
+      right: 0px;
+  }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+}
+@media screen and (max-width: 1439px) {
+    .intro__presentation{
+        margin-top: 100px;
+    }
+    .intro__presentation_content {
+        max-width: 440px;
+        h1{
+            font-size: 32px;
+          }
+        p{
+            margin-bottom: 35px;
+        }
+        .button:not(:last-child){
+            margin-right: 0px;
+            
+        }
+    }
+    .body__visual_rel{
+        .body__visual{  
+            .body__visual_img:first-child{
+                visibility: hidden;
+    }
+    .body__visual_img:last-child{
+        max-width: 350px;
+        top: -25px;
+    }}}
+}
+@media screen and (max-width: 991px) {
+    .intro__presentation_content {
+    h1{
+        font-size: 24px;
+    }
+        p{
+            font-size: 12px;
+            max-width: 450px;
+        }
+}
+.body__visual_rel{
+    .body__visual{ 
+.body__visual_img:last-child{
+    max-width: 300px;}
+
+}}}
+@media screen and (max-width: 767px) {
+    .intro__presentation{
+        margin-top: 35px;
+    }
+    .body__visual_rel{
+        .body__visual{ 
+    .body__visual_img:last-child{
+        visibility: hidden;}
+    
+    }}
+    .intro__presentation_content {
+        max-width: none;
+        width: 100%;
+        h1{
+            padding:  0 12px;
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+            padding:  0 12px;
+            max-width: 100%;
+        }
+    }
+    .mobile{
+        display: flex;
+        justify-content: space-around;
+    }
+}
